@@ -47,3 +47,57 @@ NOTAS IMPORTANTES
 CONTACTO E SUPORTE
 ----------------------
 Em caso de dúvidas ou problemas, contacte o responsável do projeto ou utilize o email de suporte indicado no rodapé da aplicação web.
+
+----------------
+English Version:
+----------------
+
+===============================================================================
+AUTOMATED EMAIL SENDING SYSTEM WITH PYTHON AND EXCHANGE (exchangelib)
+===============================================================================
+
+This project enables the automatic sending of personalized emails, using Word templates and an Excel recipient list, through a simple web interface.
+
+----------------------
+MAIN REQUIREMENTS
+----------------------
+- Python 3.8 or superior
+- Install the project dependencies (see below)
+- Exchange/Office 365 E-mail Account (with access EWS/Exchange Web Services)
+- Files: destinatarios.xlsx (recipient list, Excel format) and Templates.docx (email templates, Word format)
+
+---------------------------
+INSTALLATION AND EXECUTION
+---------------------------
+1. Install the dependencies:
+   pip install -r requirements.txt
+
+2. Make sure that the 'destinatarios.xlsx' and 'Templates.docx' files are in the same folder as the project.
+
+3. Run the application:
+   python app_integrada.py
+
+4. Open the browser and access:
+   http://localhost:5000
+
+---------
+FEATURES
+---------
+- Configuration of Exchange email credentials via web page.
+- Automatic loading of Word templates and Excel recipients.
+- Automatic sending of personalized emails to each recipient via Exchange.
+- Viewing of logs and system status in real time.
+- Ability to clear logs and remove credentials.
+- Support for automatic resending of failed emails.
+
+----------------
+iMPORTANT NOTES
+----------------
+- For sending via Exchange/Office 365, you may need to create an application password if the account has two-factor authentication (2FA).
+- The account must have access to active Exchange Web Services (EWS). If you cannot authenticate, contact your institution's administrator.
+- All logs are saved in the 'logs/' folder.
+
+--------------------
+CONTACT AND SUPPORT
+--------------------
+If you have any questions or problems, contact the project manager or use the support email address provided in the footer of the web application.
